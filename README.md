@@ -49,6 +49,14 @@ NodeBB requires the following software to be installed:
 [Please refer to platform-specific installation documentation](https://docs.nodebb.org/installing/os).
 If installing via the cloud (or using Docker), [please see cloud-based installation documentation](https://docs.nodebb.org/installing/cloud/).
 
+### Caddy
+
+To use with caddy, run like this:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.caddy.yml up -d
+```
+
 ## Securing NodeBB
 
 It is important to ensure that your NodeBB and database servers are secured. Bear these points in mind:

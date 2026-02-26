@@ -1,0 +1,20 @@
+services:
+  nodebb:
+    networks:
+      - caddy_net
+
+  mongo:
+    networks:
+      - caddy_net
+
+  redis:
+    networks:
+      - caddy_net
+
+  postgres:
+    networks:
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
